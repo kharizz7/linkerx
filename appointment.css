@@ -1,0 +1,105 @@
+#body{
+    background-color: #040912;
+background-image: linear-gradient(180deg, #040912 0%, #6284FF 33%, #2e73c1 66%, #0a0909 100%);
+
+
+}
+.container h1{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+form{
+    color: aliceblue;
+    font-size: 20px;
+    padding: 30px;
+}
+label{
+    margin-left: 10%;
+    margin-top: 20px;
+}
+input{
+    margin-left: 25%;
+    width: 600px;
+    height: 30px;
+display: flex;
+justify-content: center;
+margin-bottom: 25px;}
+
+select{margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+legend{
+    font-size: 40px;
+    font-weight: bold;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 50px;
+    width: 140px;
+    margin-top: 40px;
+    margin-left: 50%;
+    color: white;
+    background-color: #02010a;
+}
+
+/* Responsive */
+
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .container h1{
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+    form{
+        color: aliceblue;
+        font-size: 20px;
+        padding: 30px;
+        width: 400px;
+    }
+    label{
+        margin-left: 10%;
+        margin-top: 20px;
+    }
+    input{
+        margin-left: 25%;
+        width: 200px;
+        height: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;}
+    
+    select{margin-left: 25%;
+        display: flex;
+        justify-content: center;
+        height: 30px;
+    }
+    legend{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        height: 30px;
+        width: 90px;
+        margin-top: 40px;
+        margin-left: 40%;
+        color: white;
+        background-color: #02010a;
+    }
+  }
+

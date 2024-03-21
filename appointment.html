@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labour Service Provider Registration</title>
+    <link rel="stylesheet" href="appointment.css">
+</head>
+<body id="body">
+    <div class="container">
+        <h1>Labour Service Provider Registration</h1>
+        <form action="/register" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" name="first_name" id="first_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" name="last_name" id="last_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="id_type">Identity Proof Type:</label>
+                    <select name="id_type" id="id_type" required>
+                        <option value="">Select</option>
+                        <option value="handyman">Adhaar</option>
+                        <option value="cleaning">Voter ID</option>
+                        <option value="it_support">Driving Liscense</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+               
+                <div class="form-group">
+                    <label for="id_proof">Upload Government ID (Optional):</label>
+                    <input type="file" name="id_proof" id="id_proof" accept=".jpg,.jpeg,.png,.pdf">
+                    <p>**Note:** Only your name and photo will be displayed for verification purposes.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">State/Province:</label>
+                    <input type="text" name="state" id="state" required>
+                </div>
+                <div class="form-group">
+                    <label for="postal_code">Postal Code:</label>
+                    <input type="text" name="postal_code" id="postal_code" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>professional Information</legend>
+                
+                <div class="form-group">
+                    <label for="business_type">profession Type:</label>
+                    <select name="business_type" id="business_type" required>
+                        <option value="">Select</option>
+                        <option value="handyman">Mason</option>
+                        <option value="cleaning">Carpenter</option>
+                        <option value="it_support">Electrician</option>
+                        <option value="other">Welder</option>
+                        <option value="other">Plumber</option>
+                        <option value="other">Painter</option>
+                        <option value="other">False Celling</option>
+                        <option value="other">Landscaping</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="years_in_business">Experience:</label>
+                    <input type="number" name="years_in_business" id="years_in_business">
+                </div>
+                <div class="form-group">
+                    <label for="bank_account_number">Bank Account Number:</label>
+                    <input type="text" name="bank_account_number" id="bank_account_number" required>
+                </div>
+                <div class="form-group">
+                    <label for="ifsc_code">IFSC Code:</label>
+                    <input type="text" name="ifsc_code" id="ifsc_code" required>
+                </div>
+                <div class="form-group">
+                    <label for="upi_id">UPI ID:</label>
+                    <input type="text" name="upi_id" id="upi_id" required>
+                </div>
+                
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Qualifications & Skills</legend>
+                <div class="form-group">
+                    <label for="qualification">Qualifications</label>
+                    <input type="text" name="qualication" id="qualification" required>
+                </div>
+                <div class="form-group">
+                    <label for="resume">Upload Resume/Portfolio (Optional):</label>
+                    <input type="file" name="resume" id="resume">
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <button type="click">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
+                
